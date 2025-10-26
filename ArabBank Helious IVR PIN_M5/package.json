@@ -1,0 +1,41 @@
+{
+  "name": "arabbank-helious-ivr-pin",
+  "version": "1.0.0",
+  "main": "ArabBank_Helious.js",
+  "bin": "ArabBank_Helious.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "decimal": "^0.0.2",
+    "decimal.js": "^10.4.3",
+    "dotenv": "^17.2.2",
+    "express": "^4.21.1",
+    "mssql": "^11.0.1",
+    "node-fetch": "^2.7.0",
+    "node-forge": "^1.3.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "pkg": {
+    "assets": [
+      "certs/*",
+      "config/*",
+      "node_modules/swagger-ui-dist/*"
+    ],
+    "scripts": [
+      "*.js"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "output": "ArabBank_Helious.exe"
+  }
+}
